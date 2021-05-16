@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo Installing dependecies
-      - run: make install
+      - run: npm ci
       - run: echo checking by eslint
-      - run: make lint
+      - run: npx eslint .

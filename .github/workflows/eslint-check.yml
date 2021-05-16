@@ -19,7 +19,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: installing npm
-        run: npm ci
+        run: sudo npm ci
 
       # Runs a set of commands using the runners shell
       - name: checking by eslint

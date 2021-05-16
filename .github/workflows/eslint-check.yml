@@ -10,7 +10,6 @@ jobs:
     
     steps:
       - name: Eslint checking
-      - run: echo Installing dependecies
-      - run: make install
+        run: make install
       - run: echo checking by eslint
       - run: make lint

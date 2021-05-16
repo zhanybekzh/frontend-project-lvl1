@@ -1,9 +1,0 @@
-name: eslint check
-on: [push]
-jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo 'Installing dependecies'
-    - run: make install
-    - run: echo 'checking by eslint'
-    - run: make lint

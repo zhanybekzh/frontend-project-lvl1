@@ -1,0 +1,10 @@
+name: eslint-check
+on: [push]
+jobs:
+  run-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Installing dependecies
+      - run: npm ci
+      - run: echo checking by eslint
+      - run: npx eslint .

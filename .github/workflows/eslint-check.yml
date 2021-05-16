@@ -17,10 +17,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
       - name: installing npm
-        run: sudo npm ci
+        run: sudo npm install
 
-      # Runs a set of commands using the runners shell
       - name: checking by eslint
         run: make lint

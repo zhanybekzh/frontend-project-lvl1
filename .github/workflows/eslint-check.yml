@@ -18,7 +18,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: installing npm
-        run: sudo npm install
+        run: ls -la
 
-      - name: checking by eslint
-        run: make lint

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+import hello from '../src/cli.js';
+import startGame from '../src/brainEvenGame.js';
+
+startGame(hello());

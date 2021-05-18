@@ -5,3 +5,4 @@
 [![.github/workflows/eslint-check.yml](https://github.com/zhanybekzh/frontend-project-lvl1/actions/workflows/eslint-check.yml/badge.svg?event=push)](https://github.com/zhanybekzh/frontend-project-lvl1/actions/workflows/eslint-check.yml)
 [![asciicast](https://asciinema.org/a/1tziRBVbntZVFbK0ofYZcEysW.svg)](https://asciinema.org/a/1tziRBVbntZVFbK0ofYZcEysW)
 [![asciicast](https://asciinema.org/a/DCg8eDqq8mHRD88PYWFcmV5fQ.svg)](https://asciinema.org/a/DCg8eDqq8mHRD88PYWFcmV5fQ)
+[![asciicast](https://asciinema.org/a/noitK7tqBC7ril1kRho1GzT8n.svg)](https://asciinema.org/a/noitK7tqBC7ril1kRho1GzT8n)

@@ -11,5 +11,5 @@
 [![asciicast](https://asciinema.org/a/noitK7tqBC7ril1kRho1GzT8n.svg)](https://asciinema.org/a/noitK7tqBC7ril1kRho1GzT8n)
 #### The fourth game is "brainProgression":
 [![asciicast](https://asciinema.org/a/JE2tSXqH79OQOlGKZFj1fOc7c.svg)](https://asciinema.org/a/JE2tSXqH79OQOlGKZFj1fOc7c)
-#### The fourth game is "brainPrime":
+#### The fifth game is "brainPrime":
 [![asciicast](https://asciinema.org/a/XWnTAfo3Ct6bdGjGXaEaMoQUH.svg)](https://asciinema.org/a/XWnTAfo3Ct6bdGjGXaEaMoQUH)

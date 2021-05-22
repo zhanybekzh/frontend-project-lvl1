@@ -11,11 +11,11 @@ const generateProgression = (length, step, firstElement) => {
   return arr;
 };
 const hideElement = (arr, index) => {
-  const answer = arr[index];
-  arr[index] = '..';
-  return answer;
-}
-const descr = 'Find the greatest common divisor of given numbers.';
+  const newArr = [...arr];
+  newArr[index] = '..';
+  return newArr;
+};
+const descr = 'What number is missing in the progression?';
 
 const getRound = () => {
   const progressionLength = getRandomInt(5, 12);
@@ -23,9 +23,9 @@ const getRound = () => {
   const indexOfHiddenElement = getRandomInt(0, progressionLength - 1);
   const firstElement = getRandomInt(1, 100);
   const progressionArray = generateProgression(progressionLength, progressionStep, firstElement);
-  const answer = String(hideElement(progressionArray, indexOfHiddenElement));
-
-  const question = progressionArray.join(' ');
+  const answer = String(progressionArray[indexOfHiddenElement]);
+  const newProgressionArray = hideElement(progressionArray, indexOfHiddenElement);
+  const question = newProgressionArray.join(' ');
   return [answer, question];
 };
 export default () => startGame(descr, getRound);

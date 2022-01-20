@@ -13,7 +13,7 @@ const check = (num) => {
   const result = isPrime(num) ? 'yes' : 'no';
   return result;
 };
-const descr = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getRound = () => {
   const randomNum = getRandomInt(1, 100);
@@ -21,4 +21,4 @@ const getRound = () => {
   const question = randomNum;
   return [answer, question];
 };
-export default () => startGame(descr, getRound);
+export default () => startGame(description, getRound);

@@ -6,7 +6,7 @@ const check = (num) => {
   const result = isEven(num) ? 'yes' : 'no';
   return result;
 };
-const descr = 'Answer "yes" if the number is even, otherwise answer "no"';
+const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const getRound = () => {
   const randomNumber = getRandomInt(1, 100);
@@ -14,4 +14,4 @@ const getRound = () => {
   const question = randomNumber;
   return [answer, question];
 };
-export default () => startGame(descr, getRound);
+export default () => startGame(description, getRound);

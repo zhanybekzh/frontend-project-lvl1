@@ -15,7 +15,7 @@ const hideElement = (arr, index) => {
   newArr[index] = '..';
   return newArr;
 };
-const descr = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const getRound = () => {
   const progressionLength = getRandomInt(5, 12);
@@ -28,4 +28,4 @@ const getRound = () => {
   const question = newProgressionArray.join(' ');
   return [answer, question];
 };
-export default () => startGame(descr, getRound);
+export default () => startGame(description, getRound);

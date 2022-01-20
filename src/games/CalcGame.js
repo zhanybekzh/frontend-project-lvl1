@@ -4,19 +4,15 @@ import getRandomInt from '../util.js';
 
 const description = 'What is the result of the expression?';
 const calculateFunction = (pair, operation) => {
-  switch(operation) {
-    case '+': 
+  switch (operation) {
+    case '+':
       return car(pair) + cdr(pair);
-      break;
     case '-':
       return car(pair) - cdr(pair);
-      break;
-    case '*': 
+    case '*':
       return car(pair) * cdr(pair);
-      break;
     default:
       return null;
-      break;
   }
 };
 const operations = ['+', '-', '*'];

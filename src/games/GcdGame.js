@@ -10,10 +10,9 @@ const gcd = (num1, num2) => {
   const iter = (max, min) => {
     if (max % min === 0) {
       return min;
-    } else {
-      return iter(min, max % min);
     }
-  }
+    return iter(min, max % min);
+  };
   return iter(maxNum, minNum);
 };
 

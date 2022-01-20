@@ -1,13 +1,11 @@
 import startGame from '../index.js';
 import getRandomInt from '../util.js';
 
-const generateProgression = (length, step, firstElement) => {
-  const addStep = (start, index, step) => {
-    return (start + index * step);
-  }
+const generateProgression = (length, steps, firstElement) => {
+  const addStep = (start, index, step) => start + index * step;
   const arr = [];
   for (let i = 0; i < length; i += 1) {
-    arr[i] = addStep(length, i, step);
+    arr[i] = addStep(firstElement, i, steps);
   }
   return arr;
 };

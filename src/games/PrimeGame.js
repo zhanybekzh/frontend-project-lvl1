@@ -9,15 +9,11 @@ const isPrime = (num) => {
   }
   return true;
 };
-const check = (num) => {
-  const result = isPrime(num) ? 'yes' : 'no';
-  return result;
-};
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getRound = () => {
   const randomNum = getRandomInt(1, 100);
-  const answer = check(randomNum);
+  const answer = isPrime(randomNum) ? 'yes' : 'no';
   const question = randomNum;
   return [answer, question];
 };

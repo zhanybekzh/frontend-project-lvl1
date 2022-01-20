@@ -2,18 +2,14 @@ import startGame from '../index.js';
 import getRandomInt from '../util.js';
 
 const generateProgression = (length, step, firstElement) => {
+  const addStep = (start, index, step) => {
+    return (start + index * step);
+  }
   const arr = [];
-  let k = firstElement;
   for (let i = 0; i < length; i += 1) {
-    arr[i] = k;
-    k += step;
+    arr[i] = addStep(length, i, step);
   }
   return arr;
-};
-const hideElement = (arr, index) => {
-  const newArr = [...arr];
-  newArr[index] = '..';
-  return newArr;
 };
 const description = 'What number is missing in the progression?';
 
@@ -24,7 +20,8 @@ const getRound = () => {
   const firstElement = getRandomInt(1, 100);
   const progressionArray = generateProgression(progressionLength, progressionStep, firstElement);
   const answer = String(progressionArray[indexOfHiddenElement]);
-  const newProgressionArray = hideElement(progressionArray, indexOfHiddenElement);
+  const newProgressionArray = [...progressionArray];
+  newProgressionArray[indexOfHiddenElement] = '..';
   const question = newProgressionArray.join(' ');
   return [answer, question];
 };

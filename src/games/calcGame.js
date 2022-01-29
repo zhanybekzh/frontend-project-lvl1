@@ -19,7 +19,7 @@ const operations = ['+', '-', '*'];
 const getRound = () => {
   const firstRandomNumber = getRandomInt(1, 100);
   const secondRandomNumber = getRandomInt(1, 100);
-  const randomIndex = getRandomInt(0, 2);
+  const randomIndex = getRandomInt(0, operations.length - 1);
   const pair = cons(firstRandomNumber, secondRandomNumber);
   const question = `${car(pair)} ${operations[randomIndex]} ${cdr(pair)}`;
   const answer = String(calculateFunction(pair, operations[randomIndex]));

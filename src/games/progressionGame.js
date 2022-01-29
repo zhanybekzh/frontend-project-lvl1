@@ -17,9 +17,8 @@ const getRound = () => {
   const firstElement = getRandomInt(1, 100);
   const progressionArray = generateProgression(progressionLength, progressionStep, firstElement);
   const answer = String(progressionArray[indexOfHiddenElement]);
-  const newProgressionArray = [...progressionArray];
-  newProgressionArray[indexOfHiddenElement] = '..';
-  const question = newProgressionArray.join(' ');
+  progressionArray[indexOfHiddenElement] = '..';
+  const question = progressionArray.join(' ');
   return [answer, question];
 };
 export default () => startGame(description, getRound);

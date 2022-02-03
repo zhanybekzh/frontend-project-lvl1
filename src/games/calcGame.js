@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import {getRandomInt} from '../util.js';
+import getRandomInt from '../util.js';
 
 const description = 'What is the result of the expression?';
 const calculateFunction = (firstNum, secondNum, operation) => {

@@ -18,9 +18,9 @@ const operations = ['+', '-', '*'];
 const getRound = () => {
   const firstRandomNumber = getRandomInt(1, 100);
   const secondRandomNumber = getRandomInt(1, 100);
-  const randomIndex = getRandomInt(0, operations.length - 1);
-  const question = `${firstRandomNumber} ${operations[randomIndex]} ${secondRandomNumber}`;
-  const answer = String(calculateFunction(firstRandomNumber, secondRandomNumber, operations[randomIndex]));
+  const randomOperation = operations[getRandomInt(0, operations.length - 1)];
+  const question = `${firstRandomNumber} ${randomOperation} ${secondRandomNumber}`;
+  const answer = String(calculateFunction(firstRandomNumber, secondRandomNumber, randomOperation));
   return [answer, question];
 };
 

@@ -2,9 +2,6 @@ import startGame from '../index.js';
 import {getRandomInt} from '../util.js';
 
 const gcd = (num1, num2) => {
-  if (num1 === num2) {
-    return num1;
-  }
   if (num2 > num1) {
     return gcd(num2, num1);
   }
